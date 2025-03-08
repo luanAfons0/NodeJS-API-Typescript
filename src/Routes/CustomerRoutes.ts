@@ -1,5 +1,5 @@
 import CustomersController from "../Controllers/CustomersController.js";
-import Routes from "../interfaces/Route.js";
+import Routes from "../Interfaces/Route.js";
 import Router, { IRouter } from "express";
 
 class CustomerRoutes implements Routes {
