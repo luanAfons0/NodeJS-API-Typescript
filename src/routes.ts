@@ -1,6 +1,6 @@
-import HealthCheckRoutes from "./routes/HealthCheckRoutes.js";
-import CustomerRoutes from "./routes/CustomerRoutes.js";
-import Routes from "./interfaces/Route.js";
+import HealthCheckRoutes from "./app/routes/HealthCheckRoutes.js";
+import CustomerRoutes from "./app/routes/CustomerRoutes.js";
+import Routes from "./app/interfaces/Route.js";
 import { IRouter, Router } from "express";
 
 class AppRoutes implements Routes {

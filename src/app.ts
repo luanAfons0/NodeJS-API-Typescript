@@ -2,12 +2,16 @@ import express, { Express } from "express";
 import AppRoutes from "./routes.js";
 
 class App {
-  public readonly server: Express;
+  private server: Express;
 
   constructor() {
     this.server = express();
     this.middlewares();
     this.routes();
+  }
+
+  public getServer() {
+    return this.server;
   }
 
   private middlewares() {
@@ -19,4 +23,4 @@ class App {
   }
 }
 
-export default new App().server;
+export default new App().getServer();
