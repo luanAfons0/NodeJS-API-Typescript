@@ -1,4 +1,4 @@
-import Controller from "../Interfaces/Controller.js";
+import Controller from "../interfaces/Controller.js";
 import { Request, Response } from "express";
 
 class HealthCheckController implements Controller {
