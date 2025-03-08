@@ -1,4 +1,4 @@
-import Controller from "../interfaces/Controller.js";
+import IController from "../interfaces/Controller.js";
 import { Request, Response } from "express";
 
 namespace CustomersController {
@@ -24,7 +24,7 @@ var customers: Customer[] = [
   { id: 3, name: "Patrick" },
 ];
 
-class CustomersController implements Controller {
+class CustomersController implements IController {
   public index(_: Request, res: Response) {
     res.status(200).json({ data: customers });
   }

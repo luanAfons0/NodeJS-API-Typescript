@@ -1,6 +1,6 @@
 import { RequestHandler } from "express";
 
-interface Controller {
+interface IController {
   index?: RequestHandler;
   show?: RequestHandler;
   update?: RequestHandler;
@@ -8,4 +8,4 @@ interface Controller {
   destroy?: RequestHandler;
 }
 
-export default Controller;
+export default IController;

@@ -1,8 +1,8 @@
 import HealthCheckController from "../controllers/HealthCheckController.js";
-import Routes from "../interfaces/Route.js";
+import IRoutes from "../interfaces/Route.js";
 import Router, { IRouter } from "express";
 
-class HealthCheckRoutes implements Routes {
+class HealthCheckRoutes implements IRoutes {
   private readonly routes: IRouter;
 
   constructor() {

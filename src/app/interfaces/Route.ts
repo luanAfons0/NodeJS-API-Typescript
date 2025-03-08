@@ -1,8 +1,8 @@
 import { IRouter } from "express";
 
-interface Routes {
+interface IRoutes {
   initRoutes: () => void;
   getAllRoutes: () => IRouter;
 }
 
-export default Routes;
+export default IRoutes;

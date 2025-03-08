@@ -1,8 +1,8 @@
 import CustomersController from "../controllers/CustomersController.js";
-import Routes from "../interfaces/Route.js";
+import IRoutes from "../interfaces/Route.js";
 import Router, { IRouter } from "express";
 
-class CustomerRoutes implements Routes {
+class CustomerRoutes implements IRoutes {
   private readonly routes: IRouter;
 
   constructor() {
