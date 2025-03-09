@@ -1,6 +1,6 @@
 import HealthCheckRoutes from "./app/routes/HealthCheckRoutes.js";
-import CustomerRoutes from "./app/routes/CustomerRoutes.js";
-import Routes from "./app/interfaces/Route.js";
+import UserRoutes from "./app/routes/UserRoutes.js";
+import Routes from "./app/interfaces/IRoute.js";
 import { IRouter, Router } from "express";
 
 class AppRoutes implements Routes {
@@ -13,7 +13,7 @@ class AppRoutes implements Routes {
 
   public initRoutes() {
     this.routes.use(HealthCheckRoutes.getAllRoutes());
-    this.routes.use(CustomerRoutes.getAllRoutes());
+    this.routes.use(UserRoutes.getAllRoutes());
   }
 
   public getAllRoutes() {

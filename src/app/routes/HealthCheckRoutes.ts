@@ -1,5 +1,5 @@
 import HealthCheckController from "../controllers/HealthCheckController.js";
-import IRoutes from "../interfaces/Route.js";
+import IRoutes from "../interfaces/IRoute.js";
 import Router, { IRouter } from "express";
 
 class HealthCheckRoutes implements IRoutes {

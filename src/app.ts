@@ -2,7 +2,7 @@ import express, { Express } from "express";
 import AppRoutes from "./routes.js";
 
 class App {
-  private server: Express;
+  private readonly server: Express;
 
   constructor() {
     this.server = express();
